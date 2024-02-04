@@ -17,3 +17,25 @@ const container = React.createElement("div", { id: "container" }, [
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //passing react element inside the root
 root.render(container);
+
+
+const obj={
+  firstname:"pradnya",
+  PrintName:()=>{
+    console.log(this.firstname);
+  },
+  PrintName2:function(){
+    console.log(this.firstname);
+  }
+
+}
+const obj2={
+  firstname:"lee",
+}
+obj.PrintName();
+obj.PrintName2();
+
+
+obj.PrintName.call();
+obj.PrintName2.call();
+
