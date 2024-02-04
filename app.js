@@ -1,4 +1,4 @@
-// testing the file
+
 const heading1 = React.createElement(
   "h1",
   { id: "title", className: "class" },
